@@ -11,7 +11,7 @@ import { usersRouter } from "./usuarios/infrastructure/UsersRouter";
 function boostrap() {
   const app = express();
 
-  app.use(cors());  //se agrego los cors en esta actualizacion
+  app.use(cors());
 
   app.use(express.json());
   app.use("/Users", usersRouter);

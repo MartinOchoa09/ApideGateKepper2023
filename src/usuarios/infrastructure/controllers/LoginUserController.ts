@@ -9,12 +9,12 @@ export class LoginUserController {
     try {
       const { username, password } = req.params;
       const user = await this.loginUseCase.run(username, password);
+      console.log("prueba", username);
 
       if (user) {
         res.status(200).send({
           status: "inicio de sesion exitoso",
           data: {
-            id: user.id,
             username: user.username,
             password: user.password,
           },

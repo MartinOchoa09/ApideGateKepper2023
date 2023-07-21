@@ -5,7 +5,7 @@ import { AlertaRepository } from "../domain/AlertaRepository";
 
 const rabbitSettings = {
   protocol: "amqp",
-  hostname: "18.205.222.19",
+  hostname: "54.160.15.204",
   port: 5672,
   username: "Martin Espinosa",
   password: "Xiaomi8pro",
